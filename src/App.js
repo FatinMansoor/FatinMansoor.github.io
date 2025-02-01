@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Introduction from "./components/Introduction";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Footer from "./components/Footer";
-import Contact from "./components/Contact";
+import Navbar from "./components/navbar";
+import Introduction from "./components/introduction";
+import About from "./components/about";
+import Projects from "./components/projects";
+import Footer from  "./components/footer";
+import Contact from "./components/contact";
 
 function App() {
   return (

@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: #222;
+    padding: 1rem;
+    color: white;
+}
+
+.introduction {
+     text-align: center;
+     padding: 3rem;
+     background: #f4f4f4;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
