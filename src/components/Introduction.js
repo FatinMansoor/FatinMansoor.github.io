@@ -1,5 +1,6 @@
 import React from "react";
-import "./Introduction.css";
+//import "./Introduction.css";
+import "../styles/global.css";
 
 const Introduction = () => {
     return(
@@ -11,4 +12,4 @@ const Introduction = () => {
     );
 };
 
-export default introduction;
+export default Introduction;
