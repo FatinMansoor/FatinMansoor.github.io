@@ -5,6 +5,7 @@ import About from "./components/about";
 import Projects from "./components/projects";
 import Footer from  "./components/footer";
 import Contact from "./components/contact";
+import "./styles/global.css";
 
 function App() {
   return (
