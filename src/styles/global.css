@@ -52,21 +52,18 @@ section {
     background: #007bff;
     color: white;
     text-decoration: none;
+    font-size: 16px;
     font-weight: bold;
     border-radius: 8px;
     transition: background 0.3s ease-in-out;
     border: none;
     cursor: pointer;
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background: blue;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+    text-align: center;
 }
 
 .button:hover {
     background: #0056b3;
+    transform: scale(1.05);
 }
 
 
