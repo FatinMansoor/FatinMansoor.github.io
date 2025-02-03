@@ -1,6 +1,7 @@
 body {
     background-color: #121212;
     color: #ffffff;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .navbar {
@@ -55,11 +56,12 @@ body {
     color: white;
     border-radius: 5px;
     font-weight: bold;
-    margin-left: auto;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
   }
   
   .dark-mode-toggle:hover {
-    background: #0056b3;
+    background: white !important;
+    color: black !important;
   }
   
   .light-mode .dark-mode-toggle {
@@ -77,7 +79,11 @@ body {
   .dark-mode {
     background-color: #1e1e1e;
     color: white;
-    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+
+  .dark-mode .navbar {
+    background-color: #222 !important;
+    color: white !important;
   }
   
   .light-mode {
@@ -105,8 +111,35 @@ body {
   }
 
   .dark-mode .introduction {
-    background-color: #333;
-    color: white;
-    box-shadow: 0px 4px 10px rgba(255,255,255,0.2);
+    background-color: #333 !important;
+    color: white !important;
   }
-  
+
+  .dark-mode .projects {
+    background-color:  #222 !important;
+    color: white !important;
+  }
+
+  .dark-mode .contact {
+    background-color:  #222 !important;
+    color: white !important;
+  }
+
+  .dark-mode body {
+    background-color: #121212 !important;
+    color: white !important;
+  }
+
+  .dark-mode .about {
+    background-color:  #222 !important;
+    color: white !important;
+  }
+
+  .dark-mode footer {
+    background-color:  #222 !important;
+    color: white !important;
+  }
+
+  .dark-mode h1, .dark-mode h2, .dark-mode h3,.dark-mode p {
+    color: white !important;
+  }
