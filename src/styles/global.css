@@ -1,7 +1,10 @@
 body {
-    background-color: #121212;
+    background: url('/public/background.jpg') no-repeat center center fixed;
+    background-size: 115%;
+    background-color: #2e3047;
     color: #ffffff;
     transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    font-family: monospace;
 }
 
 .navbar {
@@ -23,6 +26,7 @@ body {
   font-weight: bold;
   margin: 0;
   padding-left: 20px;
+  text-transform: none;
 }
   
   .nav-links {
@@ -45,6 +49,7 @@ body {
     padding: 10px 15px;
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
     transform-origin: center;
+    text-transform: none;
   }
 
   .nav-links a:hover {
@@ -53,7 +58,7 @@ body {
   }
 
   .introduction {
-    background-color:  wheat;
+    background-color:  #415A77;
     color: black;
     padding: 50px;
     border-radius: 10px;
@@ -67,6 +72,13 @@ body {
     overflow-wrap: break-word;
   }
 
+  .introduction p:hover, .introduction h1:hover {
+    background: transparent !important;
+    opacity: 1 !important;
+    box-shadow: none !important;
+    transition:  none !important;
+  }
+
   .introduction h1, .introduction p {
     font-size: 22px;
     font-weight: bold;
@@ -75,13 +87,14 @@ body {
     display: block;
     margin: 10px auto;
     word-wrap: break-word;
+    background: transparent !important;
   }
 
   .button {
     display: inline-block;
     padding: 12px 20px;
-    background: #007bff;
-    color: white;
+    background: #fba100;
+    color: grey;
     font-weight: bold;
     text-decoration: none;
     border-radius: 5px;
@@ -90,9 +103,12 @@ body {
   }
 
   .button:hover {
-    background: #0056b3;
+    background: #e3c565;
+    opacity: 1 !important;
+    box-shadow: none !important;
+    filter: none !important;
+    backdrop-filter: none !important;
   }
-
   .profile-pic {
     width: 150px;
     height: 150px;
@@ -113,7 +129,7 @@ body {
 
   .animated-text:hover {
     transform: scale(1.2);
-    color: #ffcc00;
+    color: #def2f1;
   }
 
   .animated-text::before{
@@ -127,7 +143,9 @@ body {
     border-radius: 50%;
     z-index: -1;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    opacity: 0;
+    opacity: 1;
+    transform: scale(1.2);
+
   }
 
   .animated-text:hover::before{
@@ -139,8 +157,8 @@ body {
     font-size: 18px;
     font-weight: bold;
     text-align: center;
-    color: white;
-    text-transform: uppercase;
+    color: #bbeef1;
+    text-transform: none;
     cursor: pointer;
   }
 
@@ -158,6 +176,27 @@ body {
     text-align: center;
     margin: 10px auto;
     width: fit-content;
+    font-size: 28px;
+    text-transform: none;
+    display: inline-block;
+  }
+
+  .projects h2, .projects p{
+    color: #e3c565 !important;
+  }
+
+  h2 {
+    text-align: center;
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 60px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid currentColor;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 
