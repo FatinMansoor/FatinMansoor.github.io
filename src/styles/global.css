@@ -59,7 +59,7 @@ body {
 
   .introduction {
     background-color:  #415A77;
-    color: black;
+    color: white;
     padding: 50px;
     border-radius: 10px;
     text-align: center;
@@ -70,13 +70,54 @@ body {
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
     word-wrap: break-word;
     overflow-wrap: break-word;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+    border: 3px solid #007bff;
+  }
+
+  .introduction-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .introduction-text h1, .introduction-text p {
+    font-size: 22px;
+    font-weight: bold;
+    max-width: 90%;
+    line-height: 1.5;
+    margin: 0 auto;
+    word-wrap: break-word;
   }
 
   .introduction p:hover, .introduction h1:hover {
-    background: transparent !important;
-    opacity: 1 !important;
-    box-shadow: none !important;
-    transition:  none !important;
+    background: none;
+    opacity: 1;
+    box-shadow: non;
+    transition:  none;
+  }
+
+  .introduction-text .button {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #fba100;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background 0.3s, transform 0.2s ease-in-out;
   }
 
   .introduction h1, .introduction p {
@@ -84,31 +125,84 @@ body {
     font-weight: bold;
     max-width: 90%;
     line-height: 1.5;
-    display: block;
     margin: 10px auto;
     word-wrap: break-word;
-    background: transparent !important;
+  }
+
+  .introduction-text .button:hover {
+    background: #e3c565;
+    transform: scale(1.1);
+  }
+
+  #education { 
+    text-align: center;
+    padding: 40px;
+  }
+
+  .education-entry {
+    background-color: rgba(255,255,255,0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 60%;
+    text-align: left; 
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+  }
+
+  .education-entry h3 {
+    font-size: 22px;
+    color: #fba100;
+    margin-bottom: 5px;
+  }
+
+  .education-entry p {
+    font-size: 16px;
+    color: #bbeef1;
   }
 
   .button {
     display: inline-block;
     padding: 12px 20px;
     background: #fba100;
-    color: grey;
+    color: white;
     font-weight: bold;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 15px;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.2s ease-in-out;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    outline: none !important;
+    border: none !important;
+    position: relative;
+    z-index: 10;
   }
 
-  .button:hover {
+  .button:hover, button:focus, button:active{
     background: #e3c565;
+    transform: scale(1.05);
     opacity: 1 !important;
     box-shadow: none !important;
     filter: none !important;
     backdrop-filter: none !important;
+    outline: none !important;
+    border: none !important;
   }
+
+  .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: none !important;
+    box-shadow: none !important;
+    filter: none !important;
+    opacity: 0 !important;
+  }
+
+
   .profile-pic {
     width: 150px;
     height: 150px;
@@ -197,6 +291,30 @@ body {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  #Contact p a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #bbeef1;
+  }
+
+  #Contact p a:hover {
+    color: #e3c565;
+  }
+
+  .education-entry {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .education-entry:hover {
+    transform: scale(1.05);
   }
 
 
