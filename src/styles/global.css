@@ -9,7 +9,7 @@ body {
 
 .navbar {
     display: flex;
-    justify-content: space-evenly; 
+    justify-content: space-around; 
     align-items: center;
     padding: 15px 40px;
     background-color: #222; 
@@ -27,14 +27,15 @@ body {
   margin: 0;
   padding-left: 20px;
   text-transform: none;
+  white-space: nowrap;
 }
   
   .nav-links {
     display: flex;
     list-style: none;
-    gap: 20px;
     margin: 0px;
     padding: 0px;
+    gap: 20px;
   }
   
   .nav-links li {
@@ -50,7 +51,6 @@ body {
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
     transform-origin: center;
     text-transform: none;
-    white-space: nowrap;
   }
 
   .nav-links a:hover {
