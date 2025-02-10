@@ -15,7 +15,11 @@ const Education = () => {
             </div>
 
             <div className="education-entry">
-                <h3> South Breeze School</h3>
+                <h3> 
+                <a href = "https://southbreezeschoolbd.com/" targer = "_blank" rel = "noopener noreferrer" style = {{textDecoration: "none", color: "#ffa500"}}>
+                    South Breeze School
+                </a>
+                </h3>
                 <p> 2006-2019</p>
                 <p> High School Diploma</p>
             </div>
