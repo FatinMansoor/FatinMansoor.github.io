@@ -5,7 +5,11 @@ const Education = () => {
         <section id = "education">
             <h2>Education</h2>
             <div className="education-entry">
-                <h3>Simon Fraser University</h3>
+                <h3>
+                    <a href = "https://www.sfu.ca/" targer = "_blank" rel = "noopener noreferrer" style = {{textDecoration: "none", color: "#ffa500"}}>
+                    Simon Fraser University
+                    </a>
+                </h3>
                 <p>2022 - Present</p>
                 <p>Bachelor of Applied Science in Computer Science</p>
             </div>
