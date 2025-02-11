@@ -318,4 +318,25 @@ body {
     transform: scale(1.05);
   }
 
+  .cv-button { 
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #ffa500;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s, transform 0.2s ease-in-out;
+  }
 
+  .cv-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .cv-button:hover {
+    background: #e69500;
+    transform: scale(1.05);
+  }
