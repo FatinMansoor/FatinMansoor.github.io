@@ -9,7 +9,7 @@ const Projects = () => {
                 rel="noopener noreferrer"
                 style={{ color: "#FADA5E", textDecoration: "none" }}
             >
-                Harmoniq – A Music Sharing App https://harmoniqmusic.vercel.app/
+                Harmoniq – A Music Sharing App 🎵
             </a>
         </h3>
 
