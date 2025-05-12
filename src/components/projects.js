@@ -7,7 +7,7 @@ const Projects = () => {
                 href="https://harmoniqmusic.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ color: "#FADA5E", textDecoration: "underline" }}
+                style={{ color: "#FADA5E", textDecoration: "none" }}
             >
                 Harmoniq – A Music Sharing App https://harmoniqmusic.vercel.app/
             </a>
