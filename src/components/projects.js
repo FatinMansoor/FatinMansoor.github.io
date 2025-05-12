@@ -3,7 +3,6 @@ const Projects = () => {
         <section id = "projects" className="projects">
             <h2>Projects</h2>
         <h3 style={{ textAlign: "center", fontSize: "1.1rem" }}>
-            🎵{" "}
              <a
                 href="https://harmoniqmusic.vercel.app/"
                 target="_blank"
