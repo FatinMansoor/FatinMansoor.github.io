@@ -6,7 +6,7 @@ const About = () => {
 
             <div className="about-me">
                     <p> 
-                During my spare time I love to play video games, go to the gym, explore food options in the city, travel or sleep!
+                During my spare time I love to play video games, go to the gym, do some photography, travel or sleep!
                 </p>
             </div>
         </section>
