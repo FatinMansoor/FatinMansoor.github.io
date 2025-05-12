@@ -11,7 +11,7 @@ const Projects = () => {
                 style={{ color: "#FADA5E", textDecoration: "underline" }}
             >
     
-                Harmoniq – A Music Sharing App
+                Harmoniq – A Music Sharing App https://harmoniqmusic.vercel.app/
             </a>
         </h3>
 
