@@ -2,17 +2,19 @@ const Projects = () => {
     return(
         <section id = "projects" className="projects">
             <h2>Projects</h2>
-            <h3>
-                <a 
+        <h3>
+            🎵 Check out my latest project:{" "}
+             <a
                 href="https://harmoniqmusic.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                style = {{ color: '#f5c542', textDecoration: 'none' }}
-                >
-                    Harmoniq: A Music sharing App
-                </a>
+                style={{ color: "#FADA5E", textDecoration: "underline" }}
+            >
+    
+                Harmoniq – A Music Sharing App
+            </a>
+        </h3>
 
-            </h3>
         </section>
     );
 };
