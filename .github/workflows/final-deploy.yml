@@ -34,7 +34,7 @@ jobs:
         run: npm run build
 
       - name: 🔧 Dummy artifact workaround
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: dummy-log
           path: README.md
