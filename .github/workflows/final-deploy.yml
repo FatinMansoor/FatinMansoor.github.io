@@ -34,14 +34,14 @@ jobs:
         run: npm run build
 
       - name: 🔧 Dummy artifact workaround
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2
         with:
           name: dummy-log
           path: README.md
 
 
       - name: 📤 Upload build to GitHub Pages
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v2
         with:
           path: build
 
