@@ -8,7 +8,6 @@ on:
 permissions:
   contents: read
   pages: write
-  actions: write  # Required for artifact upload
   id-token: write
 
 concurrency:
@@ -21,12 +20,12 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4  # Updated to v4
+        uses: actions/checkout@v3
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4  # Updated to v4
+        uses: actions/setup-node@v3
         with:
-          node-version: '20'  # Updated to Node.js 20 LTS
+          node-version: '18'
 
       - name: Install dependencies
         run: npm install
@@ -35,7 +34,7 @@ jobs:
         run: npm run build
 
       - name: Upload build artifact
-        uses: actions/upload-pages-artifact@v2  # Correct for Pages
+        uses: actions/upload-pages-artifact@v2
         with:
           path: build
 
